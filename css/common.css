@@ -558,11 +558,14 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     display: inline-block;
     position: relative;
     padding: 1.6rem 4rem;
+    letter-spacing: .04em;
 }
 @media screen and (max-width: 768px){
     .sec_ttl {
-        padding: 1.6rem;
+        padding: 1.2rem 1.6rem;
         width: 80%;
+        font-size: 1.8rem;
+        line-height: 1.33;
     }
 }
 .sec_ttl::before {
@@ -603,7 +606,8 @@ _::-webkit-full-page-media, _:future, :root .sec_ttl {
     .sec_ttl.sec_ttl--styleB{
         width: auto;
         line-height: 1.5;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        padding: 1.2rem 1.6rem;
     }
 }
 .sec_ttl.sec_ttl--styleA::before,.sec_ttl.sec_ttl--styleB::before{

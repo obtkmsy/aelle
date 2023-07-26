@@ -47,10 +47,12 @@
     text-overflow: ellipsis;
     padding: 1.6rem;
     display: flex;
+    gap: 2rem;
 }
 @media screen and (max-width: 768px){
     .news_list-item{
         display: block;
+        padding: .4rem 1.2rem .8rem;
     }
 }
 .news_list-item:last-child{
@@ -78,26 +80,34 @@
     text-overflow: ellipsis;
     font-size: 1.4rem;
 }
-.news_list-item_datetime{
-    
+@media screen and (max-width: 768px){
+    .news_list-item_ttl{
+        font-size: 1.3rem;
+        line-height: 1.86;
+    }
 }
 
 time.news_list-item_datetime {
     display: inline-block;
-    margin-right: 2rem;
-    width: 8.3rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    color: #777;
+    line-height: 1;
 }
 @media screen and (max-width: 768px){
     time.news_list-item_datetime {
-        width: 9.4rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
-.frame_box {
-    width:57rem;
+
+.frame_wrapper {
+    max-width:57rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.frame_box {
+    position: relative;
+    padding-top: 56%;
 }
 @media screen and (max-width: 768px){
   .frame_box {
@@ -105,12 +115,12 @@ time.news_list-item_datetime {
   }
 }
 .frame_box iframe{
+    position: absolute;
     width: 100%;
-}
-@media screen and (max-width: 768px){
-  .frame_box iframe{
-    height: 24rem;
-  }
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .banner_list{
@@ -120,7 +130,7 @@ time.news_list-item_datetime {
 @media screen and (max-width: 768px){
   .banner_list{
     flex-wrap: wrap;
-    gap: 3.2rem;
+    gap: 2.4rem 3.2rem;
 }
 }
 .banner_list-item{
@@ -166,13 +176,35 @@ time.news_list-item_datetime {
     display: flex;
     align-items: flex-end;
 }
+
+@media screen and (max-width: 768px){
+    .intro_d_ttl .pn_list{
+        margin-bottom: .8rem;
+    }
+}
+
 .intro_d_ttl .pn_list .position{
     font-size: 2.1rem;
     line-height: 3.8rem;
     margin-right: 1.6rem;
 }
+
+@media screen and (max-width: 768px){
+    .intro_d_ttl .pn_list .position{
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}
+
 .intro_d_ttl .pn_list .name{
     font-size: 3rem;
+}
+
+@media screen and (max-width: 768px){
+    .intro_d_ttl .pn_list .name{
+        font-size: 2.4rem;
+        line-height: 1;
+    }
 }
 
 .intro_d_ttl .en{
@@ -181,8 +213,22 @@ time.news_list-item_datetime {
     font-family: 'Roboto', sans-serif;
 }
 
+@media screen and (max-width: 768px){
+    .intro_d_ttl .en{
+        font-size: 1.6rem;
+        letter-spacing: .04em;
+    }
+}
+
 .intro_d_txt{
     margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .intro_d_txt{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
 }
 
 .intro_d-smb{
@@ -222,6 +268,7 @@ time.news_list-item_datetime {
     .reason_num{
         width: auto;
         height: 13rem;
+        border-right: none;
     }
 }
 .reason_num::before{
@@ -239,13 +286,19 @@ time.news_list-item_datetime {
     font-family: 'Roboto', sans-serif;
     color: #FC7B9A;
 }
+@media screen and (max-width: 768px){
+    .reason_num-ttl{
+        font-size: 2.2rem;
+    }
+}
+
 .reason_num-num {
     display: block;
     padding: 1rem;
 }
 @media screen and (max-width: 768px){
     .reason_num-num{
-        width: 32%;
+        width: 26%;
         margin: auto;
     }
 }
@@ -256,7 +309,7 @@ time.news_list-item_datetime {
 @media screen and (max-width: 768px){
     .reason_desc{
         padding: 2.4rem;
-}
+    }
 }
 .reason_desc-ttl{
     font-size:2.4rem;
@@ -264,13 +317,38 @@ time.news_list-item_datetime {
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px){
+    .reason_desc-ttl{
+        font-size:2rem;
+        letter-spacing: .02em;
+    }
+}
+
 .reason_desc-ttl::first-letter{
     font-size:3.4rem;
 }
+
+@media screen and (max-width: 768px){
+    .reason_desc-ttl::first-letter{
+        font-size:3rem;
+        margin-right: 3px;
+    }
+}
+
 .reason_desc-txt{
     line-height: 1.5;
     margin-top: 1.6rem;
 }
+
+@media screen and (max-width: 768px){
+    .reason_desc-txt{
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.87;
+    }
+}
+
 .reason_tmb{
     flex: 1;
 }
@@ -319,6 +397,13 @@ time.news_list-item_datetime {
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
 }
 
+@media screen and (max-width: 768px){
+    .beautymenu_list-item .menu_txt{
+        font-size: 1.8rem;
+        left: 2rem;
+    }
+}
+
 .dark-cover {
     position: absolute;
     top: 0;
@@ -352,10 +437,27 @@ time.news_list-item_datetime {
   margin-top:2.4rem;
   text-align: center;
 }
+
+@media screen and (max-width: 768px){
+    .consent_form-txt{
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+}
+
 .consent_form .txt-link{
     margin-top: 4rem;
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+    .consent_form .txt-link{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 }
 
 .flow{
@@ -364,9 +466,9 @@ time.news_list-item_datetime {
 }
 
 @media screen and (max-width: 768px){
-  .flow{
-    margin-top: 9rem;
-}
+    .flow{
+        margin-top: 9rem;
+    }
 }
 
 .flow .sec_ttl {
@@ -430,10 +532,25 @@ time.news_list-item_datetime {
   margin-top:2.4rem;
   margin-left: 0.4rem;
 }
+
+@media screen and (max-width: 768px){
+    .access_desc-txt{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+
 .access_desc-dl{
   display:flex;
   margin-top: 0.4rem;
   margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 768px){
+    .access_desc-dl{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
 }
 
 .access_desc-note{
@@ -442,6 +559,14 @@ time.news_list-item_datetime {
   line-height: 1.5;
   margin-left: 0.4rem;
 }
+
+@media screen and (max-width: 768px){
+    .access_desc-note{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+
 .access_desc .cv-btn{
     width: 30rem;
     margin-right: 2.4rem;
@@ -463,5 +588,12 @@ time.news_list-item_datetime {
 @media screen and (max-width: 768px){
     .access_desc-linkarea{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .access_desc-linkarea .txt-link {
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 }

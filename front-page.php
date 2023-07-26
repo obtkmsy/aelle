@@ -44,8 +44,10 @@
     <div class="container w1120">
         <h2 class="sec_ttl sec_ttl--styleB">【小顔】カマたくさんにもっとキュンするリフト施術してみた 初の糸リフト体験！</h2>
     </div>
-    <div class="sec_contents frame_box">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q5Vl_DgSQAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="sec_contents frame_wrapper">
+        <div class="frame_box">
+            <iframe width="" height="" src="https://www.youtube.com/embed/q5Vl_DgSQAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 </section>
 <section class="sec banner_area">
@@ -107,7 +109,7 @@
 </section>
 <section class="sec point3">
     <div class="container w1120">
-    <h2 class="sec_ttl">AELLE CLINIC が選ばれる３つの理由</h2>
+    <h2 class="sec_ttl">AELLE CLINIC が選ばれる<br class="sp">３つの理由</h2>
     <ul class="point3_list">
         <li class="point3_list-item">
             <div class="reason_num">
