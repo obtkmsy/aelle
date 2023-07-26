@@ -1,0 +1,306 @@
+@charset "UTF-8";
+.art_page{
+    margin-top: 8rem;
+}
+@media screen and (max-width: 768px) {
+    .art_page{
+        margin: 6.4rem 1.6rem 0 1.6rem;
+    }
+}
+.page-template-thanks-templateB .art_page {
+    margin-top: 7.2rem;
+    padding-top: 7.2rem;
+}
+.page-template-thanks-templateB .art_page_contents-link_btn{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+.page-template-thanks-templateB .art_page_contents-txt_link{
+    text-align: center;
+    margin-top: 4rem;
+}
+.page-template-thanks-templateB .art_page_contents-link_btn .link_btn-link{
+    text-decoration: none;
+    color: #333333;
+}
+.page_ttl{
+    text-align: center;
+    color: #fff;
+    font-size: 3.4rem;
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*エディター*/
+
+.editor--page {
+    color: #333333;
+}
+
+.editor--page h2 {
+    margin-top: 3.2rem;
+}
+@media screen and (max-width: 768px) {
+.editor--page h2 {
+    margin-top: 2.4rem;
+    font-size: 2.1rem;
+}
+}
+
+.editor--page h3 {
+    font-weight: 500;
+    margin-top: 3.2rem;
+    border-left: 0.5rem solid #525252;
+    padding-left: 1rem;
+}
+
+.editor--page p {
+    margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .editor--page p {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+.editor--page ol ,.editor--page ul{
+    margin-top: 2rem;
+}
+.editor--page ul li{
+    padding-left: 1.5rem;
+    position: relative;
+    margin-top: 1.6rem;
+    line-height: 1.8;
+}
+@media screen and (max-width: 768px) {
+    .editor--page ul li{
+        margin-top: 1.2rem;
+    }
+}
+.editor--page ol li{
+    margin-top: 1.6rem;
+    line-height: 1.8;
+}
+@media screen and (max-width: 768px) {
+    .editor--page ol li{
+        margin-top: 1.2rem;
+    }
+}
+.editor--page ul li::before{
+    content: '・';
+    color: #F0810F;
+    font-size: 2.4rem;
+    position: absolute;
+    line-height: 2.4rem;
+    position: absolute;
+    left: -0.7rem;
+}
+@media screen and (max-width: 768px) {
+    .editor--page ul li::before{
+        top: 0.3rem;
+    }
+}
+.editor--page ol {
+    margin-left: 2rem;
+}
+
+.editor--page+.share-btn-list {
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .editor--page+.share-btn-list {
+        transform: scale(0.85);
+        transform-origin: left;
+								    margin-top: 4rem;
+    margin-bottom: 3rem;
+    }
+}
+.editor--page table{
+    margin-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+    .editor--page table{
+        display: block;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 768px) {
+    .editor--page thead, .editor--page tbody{
+        width: 72rem;
+        display: table;
+    }
+}
+.editor--page th{
+    background-color: #E1EEF2;
+}
+.editor--page td{
+    background-color: #f7f7f7;
+}
+.editor--page th, .editor--page td {
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 1.6rem;
+    border: solid #fff 0.3rem;
+}
+
+.data_list-item .wrapper{
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .data_list-item{
+    }
+}
+.data_list-item:nth-child(even){
+    background-color: #E1EEF2;
+}
+@media screen and (max-width: 768px) {
+    .data_list-item:nth-child(even){
+        background-color: #fbfbfb;
+    }
+}
+.data_list-item_ttl,.data_list-item_data{
+    padding: 2rem 1.6rem;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .data_list-item_ttl,.data_list-item_data{
+        border-top: 0.6rem solid #fff;
+    }
+}
+.data_list-item_ttl{
+    flex:1;
+    border-right: 0.6rem solid #fff;
+}
+@media screen and (max-width: 768px) {
+    .data_list-item_ttl{
+        border-right: none;
+        background-color: #E1EEF2;
+    }
+}
+.data_list-item_data{
+    flex:4;
+}
+
+.company .data_list-item{
+    background-color: transparent;
+    border-bottom: 0.1rem solid #bfbfbf;
+}
+@media screen and (max-width: 768px) {
+    .company .data_list-item{
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+.company .data_list-item_ttl {
+    border-top: none;
+    background-color: transparent;
+}
+}
+@media screen and (max-width: 768px) {
+    .company .data_list-item_data {
+        border-top: none;
+        flex: 2;
+    }
+}
+
+.error404 .page_ttl {
+    color: #333;
+    text-align: center;
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .error404 .page_ttl {
+        text-align: left;
+        font-size: 2.1rem;
+    }
+}
+
+.error404 .art_page {
+    margin-top: 7.2rem;
+    padding-top: 7.2rem;
+}
+@media screen and (max-width: 768px) {
+    .error404 .art_page {
+        margin-top: 7.6rem;
+        padding-top: 3.2rem;
+    }
+}
+.error404 .art_page-desc{
+    margin-top: 2rem;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .error404 .art_page-desc{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 768px) {
+.about .art_contents {
+    overflow: hidden;
+    margin-top: 4rem;
+}
+}
+
+.page_menu{
+    margin-top: 4rem;
+}
+
+.menu_list-item{
+    margin-top: 5rem;
+}
+
+
+.data_table .row{
+    display: flex;
+}
+@media screen and (max-width: 768px){
+    .data_table .row{
+        display: block;
+    }
+}
+.data_table .row.hed .data_table-item{
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #f593a5;
+    padding: 0.8rem;
+    border-left: #F593A5 1px solid;
+    border-bottom: #F593A5 1px solid;
+    box-sizing: border-box;
+}
+.data_table-item{
+    flex: 1;
+    padding: 1.6rem;
+    text-align: center;
+    font-size: 2.4rem;
+    border-left: #F593A5 1px solid;
+    border-bottom: #F593A5 1px solid;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px){
+    .data_table-item{
+        flex: unset;
+        width: 100%;
+        border-right: #F593A5 1px solid;
+    }
+}
+.data_table-item:last-child{
+    border-right: #F593A5 1px solid;
+}
+.menu_list_ttl{
+    font-weight: 500;
+    padding: 1.6rem 2.4rem;
+    font-size: 2.1rem;
+    color: #f593a5;
+    border-left: #F593A5 1px solid;
+    border-right: #F593A5 1px solid;
+    border-top: #F593A5 1px solid;
+    box-sizing: border-box;
+}
+
+.data_table{
+
+}

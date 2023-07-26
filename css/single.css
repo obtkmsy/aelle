@@ -1,0 +1,537 @@
+@charset "UTF-8";
+.sidebar_layout{
+    background-color: #60BDDA;
+    padding: 0.1rem 0 16rem;
+}
+@media screen and (max-width: 768px) {
+    .sidebar_layout{
+        padding: 0.1rem 0 8rem;
+    }
+}
+.sidebar_layout.sidebar_layout--styleB .sidebar{
+    width: 56rem;
+    background: #fff;
+    padding: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+    .sidebar_layout.sidebar_layout--styleB .sidebar{
+        width: auto;
+    }
+}
+.sidebar_layout-inner{
+    display: flex;
+    max-width: 120rem;
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    .sidebar_layout-inner{
+        flex-direction: column;
+        margin: 1.6rem;
+    }
+}
+.single-service .sidebar_layout-inner,.single-download .sidebar_layout-inner{
+    max-width: 120rem;
+}
+main{
+    flex: 1;
+    margin-top: 2.4rem;
+    background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: 0;
+    }
+}
+.single-service .sidebar{
+    width: 50rem;
+    padding: 1.6rem;
+    background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .single-service .sidebar{
+        width: auto;
+    }
+}
+.sidebar{
+    width: 42rem;
+    margin-top: 2.4rem;
+    /* padding: 1.6rem;
+    background-color: #fff; */
+    margin-left: 3.2rem;
+    height: 100%;
+    position: -webkit-sticky;
+    top: 10rem;
+    position: sticky;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    .sidebar{
+        margin: 2.4rem 0 1.6rem 0;
+        top: 0;
+        width: auto;
+    }
+}
+.widget:first-child{
+    margin-top: 0;
+}
+.widget_text{
+    margin: 0 1.6rem;
+}
+.widget{
+    margin-top: 2.4rem;
+    border: solid #fff 1rem;
+}
+.widget a{
+    display: inline-block;
+    width: 100%;
+}
+/* 記事 */
+.art{
+    margin: 3.2rem;
+}
+@media screen and (max-width: 768px) {
+    .art{
+        margin: 3.2rem 1.6rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .single-service .art{
+        margin: 3.2rem 1.6rem 1.6rem 1.6rem;
+    }
+}
+.art_ttl{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+    .art_ttl{
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+}
+.art_tmb{
+    margin-top: 4rem;
+}
+@media screen and (max-width: 768px){
+    .art_tmb{
+        margin-top: 2rem;
+    }
+}
+.single-download .art_tmb {
+    padding: 0 3.2rem;
+}
+@media screen and (max-width: 768px){
+    .single-download .art_tmb {
+        padding: 1.6rem;
+    }
+}
+.single-download .art_tmb img{
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem #33333344);
+    border-radius: 0.3rem;
+}
+.single-download .download_contents{
+    margin-top: 4.8rem;
+    border: #cdcdcd solid 1px;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+    .single-download .download_contents{
+        padding: 1.2rem;
+        margin-top: 2.4rem;
+    }
+}
+.download_contents-ttl{
+    font-size: 2rem;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .download_contents-ttl{
+        font-size: 1.8rem;
+    }
+}
+.download_contents-ttl::after {
+    content: '';
+    background-image: url(../img/download/light_bulb.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.8rem;
+    padding: 0.9rem;
+}
+.download_contents-list{
+    margin-top: 2rem;
+}
+.download_contents-list_item{
+    padding-left: 1.5rem;
+    position: relative;
+    margin-top: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+    .download_contents-list_item{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+}
+.download_contents-list_item::before{
+    content: '';
+    background-color: #F0810F;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .download_contents-list_item::before{
+        top: 1.2rem;
+    }
+}
+
+.download-template-thanks-template-download .art_page{
+    margin-top: 10rem;
+}
+.download-template-thanks-template-download .art_page {
+    margin-top: 7.2rem;
+    padding-top: 7.2rem;
+}
+@media screen and (max-width: 768px) {
+    .download-template-thanks-template-download .art_page {
+        margin: 1.6rem;
+        margin-top: 7.6rem;
+    }
+}
+.download-template-thanks-template-download .art_page_contents-link_btn{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+.download-template-thanks-template-download .art_page_contents-txt_link{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.download-template-thanks-template-download .art_page_contents-txt_link a{
+    color: #60BDDA;
+    text-decoration: underline;
+}
+
+.download-template-thanks-template-download .footer {
+    margin-top: 16rem;
+}
+@media screen and (max-width: 768px) {
+    .download-template-thanks-template-download .footer {
+        margin-top: 8rem;
+    }
+}
+
+
+
+.single-service .art_ttl{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .single-service .art_ttl{
+        flex-direction: column;
+    }
+}
+.single-service .art_ttl-logo{
+    width: 24rem;
+}
+.single-service .art_ttl-name{
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .single-service .art_ttl-name{
+        margin-top: 2.4rem;
+    }
+}
+.art_datetime{
+    display: inline-block;
+    margin-top: 2.4rem;
+    line-height: 1;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+    color: #707070;
+}
+.art_datetime::before{
+    content: '';
+    background-image: url(../img/common/clock.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.4rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.art_cat_list{
+    margin: 1.6rem 0 5.6rem;
+}
+@media screen and (max-width: 768px) {
+    .art_cat_list{
+        margin: 1.6rem 0 1.6rem;
+    }
+}
+
+/*エディター*/
+
+.editor {
+    color: #333333;
+}
+
+.editor h2 {
+    margin-top: 4.8rem;
+    border-left: #F0810F solid 0.4rem;
+    padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+@media screen and (max-width: 768px) {
+    .editor h2 {
+        margin-top: 3.2rem;
+        font-size: 1.8rem;
+        padding: 0.4rem 0.4rem 0.4rem 1.2rem;
+    }
+}
+.editor h3 {
+    background: #fff6dc;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    margin-top: 3.2rem;
+    padding: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+    .editor h3 {
+        padding: 1.6rem;
+    }
+}
+
+.editor p {
+    margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .editor p {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+.editor ol ,.editor ul{
+    margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .editor ol ,.editor ul{
+        margin-top: 1.5rem;
+    }
+}
+.editor ul li{
+    padding-left: 1.5rem;
+    position: relative;
+    margin-top: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+    .editor ul li{
+        margin-top: 1rem;
+    }
+}
+.editor ol li{
+    margin-top: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+    .editor ol li{
+        margin-top: 1rem;
+    }
+}
+.editor ul li::before{
+    content: '';
+    background-color: #F0810F;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .editor ul li::before{
+        top: 1.4rem;
+    }
+}
+.editor ol {
+    margin-left: 2rem;
+}
+.editor a{
+    color: #60BDDA;
+    text-decoration: underline;
+}
+
+.editor+.share-btn-list {
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .editor+.share-btn-list {
+        transform: scale(0.85);
+        transform-origin: left;
+								    margin-top: 4rem;
+    margin-bottom: 3rem;
+    }
+}
+
+.editor--servicepage {
+
+}
+.editor--servicepage {
+    color: #333333;
+    border: #cdcdcd solid 1px;
+    border-radius: 0.8rem;
+    padding: 0 2.4rem 2.4rem 2.4rem;
+    margin-top: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+    .editor--servicepage {
+        padding: 0 1.6rem 1.6rem 1.6rem;
+    }
+}
+
+.editor--servicepage h2 {
+    margin-top: 4.8rem;
+    color: #F0810F;
+    font-weight: 500;
+    border: none;
+    padding: 0.8rem 0;
+}
+@media screen and (max-width: 768px) {
+    .editor--servicepage h2 {
+        font-size: 1.8rem;
+        margin-top: 2.4rem;
+        padding: 0rem;
+    }
+}
+.editor--servicepage h3 {
+    background: #fff6dc;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.editor--servicepage p {
+    margin-top: 2rem;
+}
+.editor--servicepage ol ,.editor--servicepage ul{
+    margin-top: 2rem;
+}
+.editor--servicepage ul li{
+    padding-left: 1.5rem;
+    position: relative;
+}
+.editor--servicepage ol li{
+    margin-top: 1.6rem;
+}
+.editor--servicepage ul li::before{
+    content: '';
+    background-color: #F0810F;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .editor--servicepage ul li::before{
+        top: 1.4rem;
+    }
+}
+.editor--servicepage ol {
+    margin-left: 2rem;
+}
+.editor--servicepage a{
+    color: #60BDDA;
+    text-decoration: underline;
+}
+
+.editor--servicepage+.share-btn-list {
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .editor--servicepage+.share-btn-list {
+        transform: scale(0.85);
+        transform-origin: left;
+								    margin-top: 4rem;
+    margin-bottom: 3rem;
+    }
+}
+/* 目次 */
+.toc{
+    border: #7D93A8 solid 0.1rem;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    margin-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+    .toc{
+        margin-top: 2.4rem;
+    }
+}
+.toc-ttl{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    }
+.toc-ttl:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.toc-ttl .arrow{
+    background-image: url(../img/common/arrow-down-select.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.8rem;
+    height: 100%;
+    width: 2rem;
+    position: absolute;
+    transition: .3s;
+}
+.toc-ttl.close .arrow{
+    transform: rotateZ(0);
+}
+.toc_list{
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+}
+.toc_list-item{
+    margin-top: 0.8rem;
+}
+.toc_list-item:hover{
+    text-decoration: underline;
+}
+.toc_list-item:first-child{
+    margin-top: 0;
+}
+.toc_list .toc_list{
+    display: none;
+}
+
+.footer{
+    margin-top: 0;
+}
+/* サービスページ */
+.service_desc{
+    margin-top: 4rem;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+    .service_desc{
+        margin-top: 2.4rem;
+    }
+}
