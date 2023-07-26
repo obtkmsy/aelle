@@ -607,7 +607,7 @@ _::-webkit-full-page-media, _:future, :root .sec_ttl {
         width: auto;
         line-height: 1.5;
         font-size: 1.6rem;
-        padding: 1.2rem 1.6rem;
+        padding: 1.2rem;
     }
 }
 .sec_ttl.sec_ttl--styleA::before,.sec_ttl.sec_ttl--styleB::before{
