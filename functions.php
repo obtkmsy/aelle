@@ -250,3 +250,15 @@ if( function_exists('acf_add_options_page') ) {
 		header( 'X-Robots-Tag: noindex, follow', true );
 	}
 } );
+
+
+add_filter( 'post_rewrite_rules', '__return_empty_array' );
+
+add_action('current_screen','hide_permalink');
+function hide_permalink(){
+    $current_screen = get_current_screen();
+    if(isset($current_screen) && $current_screen->post_type === 'post') {
+        $style = '<style>#edit-slug-box {display: none !important; }</style>';
+        echo $style;
+    }
+}
