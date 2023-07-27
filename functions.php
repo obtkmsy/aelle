@@ -235,21 +235,16 @@ add_filter( 'tiny_mce_before_init', 'custom_tiny_mce_before_init' );
 add_editor_style('css/editor-style.css');
 
 /*【管理画面】ACF Options Page の設定 */
-if( function_exists('acf_add_options_page') ) {
-    acf_add_options_page(array(
-            // 'page_title' => 'バナー表示設定', 
-            'menu_title' => 'バナー表示設定', 
-            'menu_slug' => 'banner_settings', 
-            'capability' => 'edit_posts',
-            'redirect' => false
-          ));
-  }
-//feedページをno-indexにする。
-  add_action( 'template_redirect', function() {
-	if ( is_feed() && headers_sent() === false ) {
-		header( 'X-Robots-Tag: noindex, follow', true );
-	}
-} );
+// if( function_exists('acf_add_options_page') ) {
+//     acf_add_options_page(array(
+//             // 'page_title' => 'バナー表示設定', 
+//             'menu_title' => 'バナー表示設定', 
+//             'menu_slug' => 'banner_settings', 
+//             'capability' => 'edit_posts',
+//             'redirect' => false
+//           ));
+//   }
+
 
 
 add_filter( 'post_rewrite_rules', '__return_empty_array' );

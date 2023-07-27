@@ -50,6 +50,9 @@
         </div>
     </div>
 </section>
+<section class="insta sec">
+    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</section>
 <section class="sec banner_area">
     <div class="container w1120">
             <ul class="banner_list">
@@ -65,7 +68,7 @@
             </ul>
     </div>
 </section>
-<section class="sec banner_area">
+<section id="doctors" class="sec doctors_area">
     <div class="container w1120">
         <h2 class="sec_ttl">医師紹介</h2>
         <ul class="intro_d_list">
