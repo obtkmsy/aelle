@@ -524,13 +524,13 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     bottom: 0;
     right: 3rem;
     background-color: rgb(255, 255, 255);
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem #6666668a);
     border-radius: 50%;
     width: 6.2rem;
     height: 6.2rem;
     box-sizing: border-box;
     z-index: 50;
     cursor: pointer;
+    border: #F04E75 solid 1px;
 }
 @media screen and (max-width: 768px){
     .pagetop {
@@ -542,12 +542,20 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     height: 100%;
     width: 100%;
     text-align: center;
+    position: relative;
 }
-.pagetop img{
-    /* filter: invert(100%); */
-    transform: rotate(180deg) translateY(0.2rem);
-    height: 100%;
-    width: 50%;
+.pagetop span{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    border-top: solid 1px #F04E75;
+    border-right: solid 1px #F04E75;
+    transform: rotate(315deg);
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 /* セクション */
 .sec_ttl {
@@ -1391,21 +1399,6 @@ _::-webkit-full-page-media, _:future, :root .card_list-item .card_list-item_btn{
         width: auto;
         padding: 0 1.6rem 1.6rem 1.6rem;
     }
-}
-.item_img-logo{
-    width: 24rem;
-    height: 10rem;
-    object-fit: contain;
-}
-.item_desc-ttl{
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-.item_desc-para{
-    margin-top: 1.6rem;
-}
-.item_desc-_cat{
-    margin-top: 1.6rem;
 }
 .item_desc-linktxt{
     margin: auto;

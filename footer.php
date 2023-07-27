@@ -16,7 +16,7 @@
         <small class="footer_copyright">© AELLECLINIC. All Rights Reserved.</small>
     </div>
 </footer>
-<div id="pagetop" class="pagetop"><a href="#top"><img src="<?php echo tmpdir(); ?>/img/common/arrow_back_top.svg" alt="TOPへ戻る"></a> </div>
+<div id="pagetop" class="pagetop"><a href="#top"><span></span></a> </div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="<?php echo tmpdir(); ?>/js/script.js"></script>

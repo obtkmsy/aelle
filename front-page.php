@@ -200,7 +200,62 @@
     <div class="container w1120">
     <h2 class="sec_ttl">施術の流れ</h2>
             <div class="flow_contents">
-                <img src="<?php echo tmpdir(); ?>/img/top/Group 22.png" alt="">
+                <ul class="flow_list">
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">カウンセリング</h3>
+                            <p class="item_desc-txt">シミュレーションも実施しつつ、患者様のお悩みに寄り添いながら施術の方向性を決定します。施術はもちろん、料金やアフターケアなどご不安なことがあれば、お気軽にご相談ください。</p>
+                        </div>
+                    </li>
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb n2">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow2.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">手続き・お会計</h3>
+                            <p class="item_desc-txt">カウンセリングが終わりましたら、お会計と手続きをして頂きます。ご予約の状況によっては、当日施術が可能な場合もございます。ご希望の方は事前にお問い合わせください。</p>
+                        </div>
+                    </li>
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">洗顔</h3>
+                            <p class="item_desc-txt">施術前に洗顔をして頂きます。メイク落としなど各種アメニティの用意もございますので、当日は手ぶらでお越し頂いても構いません。</p>
+                        </div>
+                    </li>
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow4.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">施術</h3>
+                            <p class="item_desc-txt">麻酔で痛みを感じにくくしてから、お顔へ糸を入れていきます。また、患者様の不安を少しでも軽減できるように、お声がけをしながら施術を進めさせて頂いております。</p>
+                        </div>
+                    </li>
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">パウダールーム</h3>
+                            <p class="item_desc-txt">施術後すぐにメイクをして頂いても構いません。院内にパウダルームもございますので、お気軽にご利用ください。</p>
+                        </div>
+                    </li>
+                    <li class="flow_list-item">
+                        <div class="flow_list-item_tmb">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        </div>
+                        <div class="flow_list-item_desc">
+                            <h3 class="item_desc-ttl">アフターケア</h3>
+                            <p class="item_desc-txt">施術後の過ごし方の注意点を医師からお伝えします。施術日以降でも無料で医師の診察を受け付けておりますので、ご希望の方はお気軽にお問い合わせください。</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
     </div>
 </section>
