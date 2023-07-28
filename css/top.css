@@ -361,6 +361,13 @@ time.news_list-item_datetime {
 .beautymenu_list-item{
     width: 50%;
 }
+@media screen and (max-width: 768px){
+    .beautymenu_list {
+        border: none;
+        border-right: solid 1px #F04E75;
+        border-left: solid 1px #F04E75;
+    }
+}
 .beautymenu_list-item:nth-child(2){
     border-right: none;
 }
@@ -531,8 +538,18 @@ time.news_list-item_datetime {
     max-width: 104rem;
     margin: auto;
     float: unset;
-    margin-bottom: 2rem !important;
-    height: 80px !important;
+    height: 80px;
+}
+@media (max-width: 480px){
+    #sb_instagram .sb_instagram_header, .sb_instagram_header {
+    height: 50px;
+    }
+}
+
+@media (max-width: 480px){
+    #sb_instagram.sbi_mob_col_3 #sbi_images .sbi_item {
+        height: 11.432rem;
+    }
 }
 
 .insta #sb_instagram .sbi_follow_btn a{

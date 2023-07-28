@@ -116,10 +116,3 @@
     opacity: .75;
     color: unset;
 }
-@media screen and (max-width: 768px){
-    .slick-slide img {
-        width: 100%;
-        height: 35vw;
-        object-fit: cover;
-    }
-}

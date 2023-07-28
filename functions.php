@@ -251,3 +251,8 @@ function hide_permalink(){
         echo $style;
     }
 }
+
+function imgPathcode() {
+    return get_home_url();
+  }
+  add_shortcode('url', 'urlPathcode');

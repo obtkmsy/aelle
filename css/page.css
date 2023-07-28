@@ -395,12 +395,8 @@
         margin-top: -6.4rem;
     }
 }
-.concept .container{
-    max-width: 109rem;
-}
 @media screen and (max-width: 768px){
     .concept .container{
-    max-width: unset;
     padding: 1.6rem;
     }
 }

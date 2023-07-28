@@ -18,7 +18,6 @@
 .about .fv{
     background-image: url(../img/about/mv.jpg);
     background-size: cover;
-    height: 50rem;
 }
 @media screen and (max-width: 768px){
     .about .fv{
@@ -69,14 +68,6 @@
 }
 .about .fv .page_ttl{ 
     color: #fff;
-    position: absolute;
-    top: 15rem;
-}
-@media screen and (max-width: 768px) {
-    .about .fv .page_ttl{ 
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 /* 下層ページFV */

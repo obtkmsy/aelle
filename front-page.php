@@ -49,7 +49,7 @@
     </div>
 </section>
 <section class="insta sec">
-    <?php //echo do_shortcode('[instagram-feed feed=2]'); ?>
+    <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
 </section>
 <section class="sec banner_area">
     <div class="container">
@@ -154,7 +154,7 @@
     </ul>
         </div>
 </section>
-<section id="menu" class="sec">
+<section id="treatment_menu" class="sec">
     <div class="container">
         <h2 class="sec_ttl">メニュー</h2>
         <?php include dirname(__FILE__) . '/libs/parts/beautymenu.php'; ?>
@@ -167,7 +167,7 @@
 </section>
 <section class="sec flow">
     <div class="container">
-    <h2 class="sec_ttl">施術の流れ</h2>
+    <h2 id="flow" class="sec_ttl">施術の流れ</h2>
             <div class="flow_contents">
                 <ul class="flow_list">
                     <li class="flow_list-item">
@@ -228,7 +228,7 @@
             </div>
     </div>
 </section>
-<section class="sec access">
+<section id="access" class="sec access">
         <div class="container">
             <h2 class="sec_ttl">アクセス</h2>
         </div>

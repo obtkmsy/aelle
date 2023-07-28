@@ -1,4 +1,27 @@
 
+//アンカーリンク(別ページからでも)＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+$(function(){
+    var headerHeight = $('.header').outerHeight();
+    var urlHash = location.hash;
+    if(urlHash) {
+        $('body,html').stop().scrollTop(0);
+        setTimeout(function(){
+            var target = $(urlHash);
+            var position = target.offset().top - 150;
+            $('body,html').stop().animate({scrollTop:position}, 500);
+        }, 100);
+    }
+    
+      $('a[href*="#"]').on('click', function(){
+        var href = $(this).attr("href").split("#")[1];
+        var position = $("#" + href ).offset().top - 150;
+        $("html, body").animate({
+          scrollTop: position}, 500);
+       });
+    
+     });
+
+
 //TOPへ戻る＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 $(function() {
