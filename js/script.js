@@ -3,18 +3,28 @@
 $(function(){
     var headerHeight = $('.header').outerHeight();
     var urlHash = location.hash;
+    var height_x = '';
+
+    var winW = $(window).width();
+    var devW = 767;
+    if (winW >= devW) {
+        var height_x = 150;
+    }else{
+        var height_x = 70;
+    }
+
     if(urlHash) {
         $('body,html').stop().scrollTop(0);
         setTimeout(function(){
             var target = $(urlHash);
-            var position = target.offset().top - 150;
+            var position = target.offset().top - height_x;
             $('body,html').stop().animate({scrollTop:position}, 500);
         }, 100);
     }
     
       $('a[href*="#"]').on('click', function(){
         var href = $(this).attr("href").split("#")[1];
-        var position = $("#" + href ).offset().top - 150;
+        var position = $("#" + href ).offset().top - height_x;
         $("html, body").animate({
           scrollTop: position}, 500);
        });
@@ -65,22 +75,20 @@ $(function() {
 
 //ハンバーガーメニュー
 
-    $(function(){
-       // $('.hamburger').on('touchstart', function(){
+$(function(){
 $(document).on("click", ".hamburger", function() {
             $(this).children().toggleClass("active");
             $('.hamburger').toggleClass("active");
             $('.menu').toggleClass("active");
             $('.header').toggleClass("active");
             $('body').toggleClass("stop-scroll");
-            // $(".sp-navi__hamburger-menu").fadeToggle(200);
             $(".float-menu").fadeToggle(300);
         });
-
-        // $(document).on(clickEventType,'.menu-item',function(){
-        //     $('.sp-navi__btn-trigger').removeClass("active");
-        //     $(".sp-navi__hamburger-menu").fadeOut(200);
-        // });
+        $(document).on("click", ".menu-item a", function() {
+            $('.header').removeClass("active");
+            $('body').removeClass("stop-scroll");
+            $('.hamburger').removeClass("active");
+        });
     });
 
 
@@ -95,13 +103,6 @@ $(window).on('load resize', function(){
             $('body').removeClass("stop-scroll");
   }
 });
-
-
-// jQuery(function($) {
-//   if ( $('.prapoli .error')[0] ) {
-//     $('.btn').addClass('error');
-//   }
-// });
 
 
 

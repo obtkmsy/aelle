@@ -570,9 +570,10 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
 @media screen and (max-width: 768px){
     .sec_ttl {
         padding: 1.2rem 1.6rem;
-        width: 80%;
+        min-width: 50%;
         font-size: 1.8rem;
         line-height: 1.33;
+        box-sizing: border-box;
     }
 }
 .sec_ttl::before {

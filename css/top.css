@@ -314,6 +314,7 @@ time.news_list-item_datetime {
 @media screen and (max-width: 768px){
     .reason_desc{
         padding: 2.4rem;
+        padding-top: 0;
     }
 }
 .reason_desc-ttl{
