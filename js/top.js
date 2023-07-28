@@ -10,12 +10,10 @@ $('.header').removeClass('float');
 });
 
 $('.slick').slick({
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     dots: true,
-    infinite: true,
     speed: 300,
-    variableWidth: true,
     responsive: [
         {
           breakpoint: 768,

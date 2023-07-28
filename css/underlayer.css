@@ -4,7 +4,6 @@
     margin-top: 7.2rem;
 }
 .fv{
-    background-image: url(../img/menu/mv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
@@ -12,18 +11,45 @@
 }
 @media screen and (max-width: 768px) {
     .fv{
+        height: 18rem;
+        background-size: contain;
     }
 }
-.fv:before{
-    background-position: left calc((100vw - 144rem)/ 2 + 11rem) bottom 0;
-    left: 0;
-    top:5rem;
+.about .fv{
+    background-image: url(../img/about/mv.jpg);
+    background-size: cover;
+    height: 50rem;
+}
+@media screen and (max-width: 768px){
+    .about .fv{
+        background-image: url(../img/about/mv_sp.jpg);
+        height: 25rem;
+    }
+}
+.smallface .fv{
+    background-image: url(../img/menu/mv1.jpg);
+}
+.aesthetic-dermatology .fv{
+    background-image: url(../img/menu/mv2.jpg);
+}
+.hair-removal .fv{
+    background-image: url(../img/menu/mv3.jpg);
+}
+.aesthetic-surgery .fv{
+    background-image: url(../img/menu/mv4.jpg);
 }
 @media screen and (max-width: 768px) {
-.fv:before{
-        background-position: top left 2rem !important;
-        bottom: -4.5rem;
-        top: unset !important;
+    .smallface .fv{
+        background-image: url(../img/menu/mv1_sp.jpg);
+    }
+    .aesthetic-dermatology .fv{
+        background-image: url(../img/menu/mv2_sp.jpg);
+    }
+    .hair-removal .fv{
+        background-image: url(../img/menu/mv3_sp.jpg);
+    }
+    .aesthetic-surgery .fv{
+        background-image: url(../img/menu/mv4_sp.jpg);
     }
 }
 .fv .page_ttl{
@@ -33,12 +59,26 @@
     padding-left: 4rem;
     color: #333;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    font-weight: bold;
+    font-weight: 600;
 }
 @media screen and (max-width: 768px) {
     .fv .page_ttl{
+        font-size: 2.4rem;
+        padding-left: 2.4rem;
     }
 }
+.about .fv .page_ttl{ 
+    color: #fff;
+    position: absolute;
+    top: 15rem;
+}
+@media screen and (max-width: 768px) {
+    .about .fv .page_ttl{ 
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 /* 下層ページFV */
 .fv.fv--about::before{
     content: '';
@@ -276,7 +316,7 @@
 }
 @media screen and (max-width: 768px){
     .fv .container{
-        width: auto;
+        width: 100%;
     }
 }
 

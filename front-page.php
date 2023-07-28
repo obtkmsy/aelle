@@ -1,33 +1,32 @@
 <?php get_header(); ?>
 <main class="main">
 <div class="fv">
-        <div class="slider-area slick container">
+        <div class="slider-area slick">
             <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/slide-1.png" alt="">
+                <img src="<?php echo tmpdir(); ?>/img/top/133255.jpg" alt="">
             </div>
             <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/slide-2.png" alt="">
+                <img src="<?php echo tmpdir(); ?>/img/top/131927.jpg" alt="">
             </div>
             <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/slide-3.png" alt="">
+                <img src="<?php echo tmpdir(); ?>/img/top/133253.jpg" alt="">
             </div>
         </div>
 </div>
 
 <section class="news sec">
-    <div class="container w1120">
+    <div class="container">
         <h2 class="sec_ttl sec_ttl--styleA">
             <span class="sec_ttl-en">NEWS</span>
         </h2>
 <?php
       $args = array(
           'post_type'      => 'post',
-          'posts_per_page' => 4,
+          'posts_per_page' => 3,
       );
       $query = new WP_Query( $args );
 ?>
     <?php if($query->have_posts()): ?>
-        <div class="sec_contents">
             <ul class="news_list">
                 <?php while($query->have_posts()): $query->the_post(); ?>
                 <li class="news_list-item">
@@ -36,12 +35,11 @@
                 </li>
                 <?php endwhile;?>
             </ul>
-        </div>
         <?php endif; wp_reset_postdata();?>
     </div>
 </section>
 <section class="sec">
-    <div class="container w1120">
+    <div class="container">
         <h2 class="sec_ttl sec_ttl--styleB">【小顔】カマたくさんにもっとキュンするリフト施術してみた 初の糸リフト体験！</h2>
     </div>
     <div class="sec_contents frame_wrapper">
@@ -51,10 +49,10 @@
     </div>
 </section>
 <section class="insta sec">
-    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    <?php //echo do_shortcode('[instagram-feed feed=2]'); ?>
 </section>
 <section class="sec banner_area">
-    <div class="container w1120">
+    <div class="container">
             <ul class="banner_list">
                 <li class="banner_list-item">
                     <a href="#"><img src="<?php echo tmpdir(); ?>/img/top/banner-sample.png" alt=""></a>
@@ -69,7 +67,7 @@
     </div>
 </section>
 <section id="doctors" class="sec doctors_area">
-    <div class="container w1120">
+    <div class="container">
         <h2 class="sec_ttl">医師紹介</h2>
         <ul class="intro_d_list">
             <li class="intro_d_list-item">
@@ -111,7 +109,7 @@
     </div>
 </section>
 <section class="sec point3">
-    <div class="container w1120">
+    <div class="container">
     <h2 class="sec_ttl">AELLE CLINIC が選ばれる<br class="sp">３つの理由</h2>
     <ul class="point3_list">
         <li class="point3_list-item">
@@ -156,39 +154,10 @@
     </ul>
         </div>
 </section>
-<section class="sec">
-    <div class="container w1120">
+<section id="menu" class="sec">
+    <div class="container">
         <h2 class="sec_ttl">メニュー</h2>
-        <ul class="beautymenu_list">
-            <li class="beautymenu_list-item">
-                <a href="<?php echo home_url(); ?>/smallface/">
-                    <span class="menu_txt">アンチエイジング小顔</span>
-                    <img src="<?php echo tmpdir(); ?>/img/top/menu1.jpg" alt="アンチエイジング小顔">
-                    <span class="dark-cover"></span>
-                </a>
-            </li>
-            <li class="beautymenu_list-item">
-                <a href="<?php echo home_url(); ?>/aesthetic-dermatology/">
-                    <span class="menu_txt">美容皮膚科</span>
-                    <img src="<?php echo tmpdir(); ?>/img/top/menu2.jpg" alt="美容皮膚科">
-                    <span class="dark-cover"></span>
-                </a>
-            </li>
-            <li class="beautymenu_list-item">
-                <a href="<?php echo home_url(); ?>/hair-removal/">
-                    <span class="menu_txt">脱毛</span>
-                    <img src="<?php echo tmpdir(); ?>/img/top/menu3.jpg" alt="脱毛">
-                    <span class="dark-cover"></span>
-                </a>
-            </li>
-            <li class="beautymenu_list-item">
-                <a href="<?php echo home_url(); ?>/aesthetic-surgery/">
-                    <span class="menu_txt">美容外科</span>
-                    <img src="<?php echo tmpdir(); ?>/img/top/menu4.jpg" alt="美容外科">
-                    <span class="dark-cover"></span>
-                </a>
-            </li>
-        </ul>
+        <?php include dirname(__FILE__) . '/libs/parts/beautymenu.php'; ?>
         <div class="consent_form">
             <h3 class="consent_form-ttl">未成年の施術について</h3>
             <p class="consent_form-txt">未成年(18歳未満)での施術ご希望の場合は、親権者の方とご一緒にご来院いただくか<br class="pc">未成年同意書をご記入、ご持参の上、ご来院をお願いいたします。</p>
@@ -197,12 +166,12 @@
     </div>
 </section>
 <section class="sec flow">
-    <div class="container w1120">
+    <div class="container">
     <h2 class="sec_ttl">施術の流れ</h2>
             <div class="flow_contents">
                 <ul class="flow_list">
                     <li class="flow_list-item">
-                        <div class="flow_list-item_tmb">
+                        <div class="flow_list-item_tmb n1">
                             <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
                         </div>
                         <div class="flow_list-item_desc">
@@ -220,8 +189,8 @@
                         </div>
                     </li>
                     <li class="flow_list-item">
-                        <div class="flow_list-item_tmb">
-                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        <div class="flow_list-item_tmb n3">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow3.svg" alt="">
                         </div>
                         <div class="flow_list-item_desc">
                             <h3 class="item_desc-ttl">洗顔</h3>
@@ -229,7 +198,7 @@
                         </div>
                     </li>
                     <li class="flow_list-item">
-                        <div class="flow_list-item_tmb">
+                        <div class="flow_list-item_tmb n4">
                             <img src="<?php echo tmpdir(); ?>/img/top/flow4.svg" alt="">
                         </div>
                         <div class="flow_list-item_desc">
@@ -238,8 +207,8 @@
                         </div>
                     </li>
                     <li class="flow_list-item">
-                        <div class="flow_list-item_tmb">
-                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        <div class="flow_list-item_tmb n5">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow5.svg" alt="">
                         </div>
                         <div class="flow_list-item_desc">
                             <h3 class="item_desc-ttl">パウダールーム</h3>
@@ -247,8 +216,8 @@
                         </div>
                     </li>
                     <li class="flow_list-item">
-                        <div class="flow_list-item_tmb">
-                            <img src="<?php echo tmpdir(); ?>/img/top/flow1.svg" alt="">
+                        <div class="flow_list-item_tmb n6">
+                            <img src="<?php echo tmpdir(); ?>/img/top/flow6.svg" alt="">
                         </div>
                         <div class="flow_list-item_desc">
                             <h3 class="item_desc-ttl">アフターケア</h3>
@@ -260,9 +229,10 @@
     </div>
 </section>
 <section class="sec access">
-    <div class="container w1120">
-        <h2 class="sec_ttl">アクセス</h2>
-        <div class="access_contents">
+        <div class="container">
+            <h2 class="sec_ttl">アクセス</h2>
+        </div>
+        <div class="access_contents container w1120">
             <div class="googlemap">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12965.310060946886!2d139.7123926!3d35.6689368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d052ca9b8df%3A0x92426fdabbb6a79a!2zQUVMTEUgQ0xJTklDIOOCouOCqOODq-OCr-ODquODi-ODg-OCr-ihqOWPgumBkw!5e0!3m2!1sja!2sjp!4v1690180084030!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -282,7 +252,6 @@
                     </div>
             </div>
         </div>
-    </div>
 </section>
 </main>
 <?php get_footer(); ?>

@@ -1,5 +1,4 @@
 <?php get_header();?>
-<?php custom_breadcrumb(); ?>
 <main class="page_menu">
 <div class="fv">
     <div class="container w1120">
@@ -8,6 +7,7 @@
 </div>
 <article class="art_page">
     <div class="container">
+    <?php include dirname(__FILE__) . '/libs/parts/beautymenu.php'; ?>
     <?php if(have_rows('menu_list_parent')):?>
         <div class="art_page_contents">
                 <?php while(have_rows('menu_list_parent')): the_row();?>
@@ -16,7 +16,7 @@
                         <?php if(have_rows('menu_list_children')):?>
                             <?php while(have_rows('menu_list_children')): the_row();?>
                             <?php if(get_sub_field('list_ttl')):?>
-                            <div class="data_table-item mprice"><?php the_sub_field('list_ttl'); ?></div>
+                            <div class="data_table-item ttl"><?php the_sub_field('list_ttl'); ?></div>
                             <?php endif;?>
                             <div class="data_table">
                                 <div class="row hed">

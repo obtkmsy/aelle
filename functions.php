@@ -65,19 +65,11 @@ register_nav_menu( 'footer-menu1', 'フッターメニュー1' );
 register_nav_menu( 'footer-menu2', 'フッターメニュー2' );
 
 // カスタム投稿
-// require_once $template_root_dir . '/libs/pages/article.php';
-// require_once $template_root_dir . '/libs/pages/download.php';
-// require_once $template_root_dir . '/libs/pages/service.php';
-// require_once $template_root_dir . '/libs/pages/form.php';
-// require_once $template_root_dir . '/libs/pages/thanks.php';
 
 //ACFの読み込み
 require_once $template_root_dir . '/libs/acf/acf.php';
 
 // カスタムタクソノミー
-// require_once $template_root_dir . '/libs/taxonomies/article.php';
-// require_once $template_root_dir . '/libs/taxonomies/download.php';
-// require_once $template_root_dir . '/libs/taxonomies/service.php';
 
 // パンくずリスト
 require_once $template_root_dir . '/libs/parts/breadcrumb.php';
@@ -188,10 +180,11 @@ function getPostViews($postID) {
 // }, 10, 2);
 
 
+//＝＝＝＝＝＝＝＝＝＝エディター関連
+
 // 自動付与pタグを削除
 remove_filter('term_description','wpautop');
 
-//エディターの表示項目を指定
 function custom_editor_settings( $initArray ){
     $initArray['block_formats'] = "見出し2=h2; 見出し3=h3; 段落=p;";
     return $initArray;
@@ -233,6 +226,7 @@ add_filter( 'tiny_mce_before_init', 'custom_tiny_mce_before_init' );
 
     //エディターへcssを適用
 add_editor_style('css/editor-style.css');
+
 
 /*【管理画面】ACF Options Page の設定 */
 // if( function_exists('acf_add_options_page') ) {

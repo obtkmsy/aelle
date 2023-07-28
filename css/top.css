@@ -25,17 +25,22 @@
     }
 }
 .slider-area{
-    /* padding-top: 4rem; */
+    max-width: 88rem;
+    margin: auto;
+    padding-top: 4rem;
 }
 @media screen and (max-width: 768px){
     .slider-area{
         padding-top: 0;
     }
 }
-@media screen and (max-width: 768px){
-    .news{
 
-    }
+/* ニュースエリア */
+.news .sec_ttl{
+    margin-left: 0.4rem;
+}
+.news .news_list{
+    margin-top: 1.6rem;
 }
 .news_list-item{
     border: #F593A5 1px solid;
@@ -304,7 +309,7 @@ time.news_list-item_datetime {
 }
 .reason_desc{
     flex: 1.6;
-    padding: 2.4rem 3.2rem;
+    padding: 1.6rem 3.2rem;
 }
 @media screen and (max-width: 768px){
     .reason_desc{
@@ -352,77 +357,26 @@ time.news_list-item_datetime {
 .reason_tmb{
     flex: 1;
 }
-.beautymenu_list{
-    display: flex;
-    border: solid 1px #F04E75;
-    border-bottom: none;
-    flex-wrap: wrap;
-    margin-top: 7rem;
-}
+
 .beautymenu_list-item{
     width: 50%;
-    transition: transform 0.3s ease;
-    border-bottom: solid 1px #F04E75;
-    box-sizing: border-box;
 }
-@media screen and (max-width: 768px){
-    .beautymenu_list-item{
-        width: auto;
-    }
+.beautymenu_list-item:nth-child(2){
+    border-right: none;
 }
-.beautymenu_list-item:nth-child(odd){
-    border-right: solid 1px #F04E75;
-}
-.beautymenu_list-item a{
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-.beautymenu_list-item img{
-    transition: transform 0.3s ease;
-    transform-origin: right;
-}
-.beautymenu_list-item a:hover img{
-    transform: scale(1.2);
-}
-
-.beautymenu_list-item .menu_txt{
-    position: absolute;
-    top: 50%;
-    z-index: 50;
-    color: #222;
-    left: 4rem;
+.beautymenu_list-item .menu_txt {
     font-size: 2.4rem;
-    transform: translateY(-50%);
-    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    left: 4rem;
 }
-
 @media screen and (max-width: 768px){
-    .beautymenu_list-item .menu_txt{
-        font-size: 1.8rem;
-        left: 2rem;
+    .beautymenu_list-item .menu_txt {
+        font-size: 1.2rem;
+        left: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
     }
 }
 
-.dark-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: .5;
-    transition: background-color 0.3s ease;
-    pointer-events: none;
-  }
-
-  .beautymenu_list-item a:hover .dark-cover {
-    background-color: #222;
-  }
-
-  .beautymenu_list-item a:hover .menu_txt {
-    color: #fff;
-  }
   .consent_form{
     border: solid 1px #F04E75;
     padding: 3.2rem;
@@ -460,13 +414,13 @@ time.news_list-item_datetime {
     }
 }
 
-.access_contents{
+.access .access_contents{
     display: flex;
     flex-wrap: wrap;
     margin-top: 10rem;
 }
 @media screen and (max-width: 768px){
-  .access_contents{
+    .access .access_contents{
     margin-top: 2rem;
   }
 }
@@ -569,25 +523,16 @@ time.news_list-item_datetime {
         font-weight: 400;
     }
 }
-.insta{
-    overflow: hidden;
-}
-#sb_instagram.sbi_col_4 #sbi_images .sbi_item {
-    width: calc(100% / 6);
-}
+
 #sb_instagram .sbi_photo {
     height: calc(100vw / 6) !important;
 }
 #sb_instagram .sb_instagram_header, .sb_instagram_header {
-    padding: 0 !important;
     max-width: 104rem;
     margin: auto;
     float: unset;
     margin-bottom: 2rem !important;
     height: 80px !important;
-}
-#sb_instagram #sbi_images {
-    padding: 0 !important;
 }
 
 .insta #sb_instagram .sbi_follow_btn a{
@@ -702,11 +647,23 @@ time.news_list-item_datetime {
     display: none;
 }
 .flow_list-item_tmb img{
-    width: 45%;
+    width: 55%;
     margin: auto;
 }
+.flow_list-item_tmb.n1 img {
+    width: 45%;
+}
 .flow_list-item_tmb.n2 img {
-    width: 54%;
+    width: 68%;
+}
+.flow_list-item_tmb.n3 img {
+    width: 52%;
+}
+.flow_list-item_tmb.n5 img {
+    width: 85%;
+}
+.flow_list-item_tmb.n6 img {
+    width: 60%;
 }
 .flow_list-item_desc{
     flex: 1;
@@ -715,6 +672,7 @@ time.news_list-item_datetime {
     font-size: 2.4rem;
     font-weight: 600;
     color: #EC829B;
+    font-weight: 500;
 }
 @media screen and (max-width: 768px){
     .flow_list-item_desc .item_desc-ttl {
