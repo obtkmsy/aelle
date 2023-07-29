@@ -222,7 +222,7 @@ function custom_tiny_mce_before_init( $init )
 add_filter( 'tiny_mce_before_init', 'custom_tiny_mce_before_init' );
 
     //エディターへcssを適用
-add_editor_style('css/editor-style.css');
+// add_editor_style('css/editor-style.css');
 
 
 /*【管理画面】ACF Options Page の設定 */
