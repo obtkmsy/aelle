@@ -213,11 +213,16 @@
     color: #333;
     text-align: center;
     display: block;
+    padding-top: 7rem;
 }
 @media screen and (max-width: 768px) {
+    .error404 .container{
+        padding: 0 1.6rem;
+    }
     .error404 .page_ttl {
         text-align: left;
         font-size: 2.1rem;
+        padding-top: 4rem;
     }
 }
 
@@ -329,6 +334,11 @@
 }
 .menu_list-item{
     margin-top: 6.4rem;
+}
+@media screen and (max-width: 768px){
+    .menu_list-item{
+        margin-top: 2.4rem;
+    }
 }
 
 
