@@ -1,3 +1,22 @@
+//グローバルナビのフロート
+var winW = $(window).width();
+var devW = 767;
+$('.header').removeClass('float');
+if (winW >= devW) {
+    $(window).scroll(function(){
+        indicateHeight = 0;
+        indicateHeight = $('.header').height(); 
+    if ($(window).scrollTop() > indicateHeight) {
+        console.log(indicateHeight) ;
+    $('.header').addClass('float');
+    } else {
+    $('.header').removeClass('float');
+    }
+    });
+}else{
+    $('.header').css('position','fixed');
+}
+
 
 //アンカーリンク(別ページからでも)＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 $(function(){

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 表示用の記述 */
+
 .pc {
     display: block !important;
 }
@@ -75,6 +76,16 @@
     max-width: 144rem;
     margin: auto;
 }
+
+.main{
+    margin-top: 15.8rem;
+}
+@media screen and (max-width: 768px){
+    .main{
+        margin-top: 7.7rem;
+    }
+}
+
 
 /* ボタンUI */
 .cv_btn-link{
@@ -210,8 +221,8 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
 .header.active{
     filter: none;
 }
-.header.float .menu_list .menu-item a ,.header.float .menu_area-cv_btn a{
-    /* color: #333; */
+.header.float .menu_list .menu-item a {
+    padding: 0.8rem 1.2rem;
 }
 
 .header_nav{
@@ -219,17 +230,24 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    transition: 1s;
 }
 .header_nav-logoarea{
-    max-width: 104rem;
+    max-width: 140rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 11rem;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .header_nav-logoarea{
+        height: auto;
     }
+}
+.float .header_nav-logoarea{
+    max-width: 140rem;
+    height: 8rem;
 }
 
 .header_nav-logoarea a{
@@ -243,8 +261,8 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
         width: 20rem;
     }
 }
-.logoarea-logo{
-    
+.float .header_nav-logoarea a{
+    width: 26rem;
 }
 
 .header_nav-menu_area{

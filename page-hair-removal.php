@@ -1,5 +1,5 @@
 <?php get_header();?>
-<main class="page_menu">
+<main class="main">
 <div class="fv">
     <div class="container w1120">
         <h1 class="page_ttl"><?php the_title();?></h1>

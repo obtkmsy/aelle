@@ -17,7 +17,7 @@
     }
 }
 .fv{
-    margin-top: 13.88rem;
+    margin-top: 15.8rem;
 }
 @media screen and (max-width: 768px) {
     .fv{
@@ -309,7 +309,7 @@ time.news_list-item_datetime {
 
 .reason_num-num {
     display: block;
-    padding: 0 1rem 0 1rem;
+    padding: 0.8rem 1rem 0 1rem;
 }
 @media screen and (max-width: 768px){
     .reason_num-num{

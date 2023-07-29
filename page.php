@@ -1,7 +1,7 @@
 <?php get_header();?>
 <?php custom_breadcrumb(); ?>
 <main>
-<div class="fv">
+<div class="main">
     <div class="container w1120">
         <h1 class="page_ttl"><?php the_title();?></h1>
     </div>

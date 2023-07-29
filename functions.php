@@ -140,9 +140,6 @@ function mvwpform_autop_filter() {
 }
 mvwpform_autop_filter();
 
-//サイドバーウィジェット有効
-    require_once $template_root_dir . '/banner.php';
-
 // ウィジェットタイトル非表示
 function mycus_remove_widget_title_func( $widget_title ) {
       return null;
