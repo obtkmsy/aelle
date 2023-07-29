@@ -265,3 +265,7 @@ function imgPathcode() {
 	}
 	return $use_block_editor;
 },10,2);
+// 投稿タイプもエディタ非表示
+add_action( 'init', function() { 
+	remove_post_type_support( 'post', 'editor' ); 
+}, 99);
