@@ -240,6 +240,16 @@ add_filter( 'tiny_mce_before_init', 'custom_tiny_mce_before_init' );
 
 add_filter( 'post_rewrite_rules', '__return_empty_array' );
 
+// add_action('current_screen','hide_permalink');
+// function hide_permalink(){
+//     $current_screen = get_current_screen();
+//     if(isset($current_screen) && $current_screen->post_type === 'post') {
+//         $style = '<style>#edit-slug-box {display: none !important; }</style>';
+//         echo $style;
+//     }
+// }
+
+
 function imgPathcode() {
     return get_home_url();
   }
@@ -256,10 +266,8 @@ function imgPathcode() {
 	}
 	return $use_block_editor;
 },10,2);
-<<<<<<< HEAD
+
 // 投稿タイプもエディタ非表示
 add_action( 'init', function() { 
 	remove_post_type_support( 'post', 'editor' ); 
 }, 99);
-=======
->>>>>>> 050821a939d85efc78d60ab68d06c151edf349dc

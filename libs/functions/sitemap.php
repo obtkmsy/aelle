@@ -28,6 +28,7 @@ function create_xml_sitemap() {
   wp_reset_postdata();
 
   $post_types = array(
+    'post',
     'article',
     'download',
     'service',
@@ -124,7 +125,7 @@ function post_type_priority($post_type) {
 
   return $priority;
 }
-
+add_action('publish_post', 'create_xml_sitemap');
 add_action('publish_page', 'create_xml_sitemap');
 add_action('publish_article', 'create_xml_sitemap');
 add_action('publish_download', 'create_xml_sitemap');
