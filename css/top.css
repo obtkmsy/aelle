@@ -145,8 +145,13 @@ time.news_list-item_datetime {
 }
 .banner_list-item{
     border: #F593A5 1px solid;
+    width: calc(100% / 3);
 }
-
+@media screen and (max-width: 768px){
+    .banner_list-item{
+        width: auto;
+    }
+}
 /* 医師紹介 */
 .intro_d_list{
     margin-top: 10rem;

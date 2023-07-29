@@ -253,3 +253,15 @@ function imgPathcode() {
     return get_home_url();
   }
   add_shortcode('url', 'urlPathcode');
+
+
+// TOPページ、当院についてページ、各メニューページは、エディタ非表示
+  add_filter('use_block_editor_for_post',function($use_block_editor,$post){
+	if($post->post_type==='page'){
+		if(in_array($post->post_name,['top','about','smallface','aesthetic-dermatology','hair-removal','aesthetic-surgery'])){ 
+			remove_post_type_support('page','editor');
+			return false;
+		}
+	}
+	return $use_block_editor;
+},10,2);

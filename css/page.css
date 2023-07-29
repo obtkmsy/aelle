@@ -414,6 +414,7 @@
     color: #F593A5;
     position: relative;
     left: -0.8rem;
+    font-weight: 400;
 }
 @media screen and (max-width: 768px){
     .concept .sec_ttl-en{
@@ -423,7 +424,6 @@
         font-size: 2.6rem;
         left: -0.4rem;
         margin: 0;
-        font-weight: 400;
     }
 }
 
