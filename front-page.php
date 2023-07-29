@@ -91,7 +91,10 @@
                     <h3 class="intro_d_ttl">
                         <dl class="pn_list">
                             <dt class="position">理事長</dt>
-                            <dd class="name">和倉 隆造</dd>
+                            <dd class="name">
+                                <span>和倉 隆造</span>
+                                <a href="#" class="hashtag">#小顔先生</a>
+                            </dd>
                         </dl>
                         <span class="en">RYUZO WAKURA</span>
                     </h3>

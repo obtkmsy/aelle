@@ -42,8 +42,13 @@
 }
 
 .txt-link{
-    color: #31BCB4;
+    color: #3BB3CD;
     text-decoration: underline;
+}
+.hashtag{
+    font-size: 1.8rem;
+    color: #3BB3CD;
+    margin-left: 1rem;
 }
 
 .stop-scroll{
@@ -415,7 +420,7 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
 }
 @media screen and (max-width: 768px){
     .footer{
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 }
 .footer_bottom{
@@ -587,8 +592,8 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
 }
 @media screen and (max-width: 768px) {
 .sec_ttl::before {
-    left: 0;
-    width: calc(100vw - 3.2rem);
+    left: -1.6rem;
+    width: 100vw;
 }
 }
 _::-webkit-full-page-media, _:future, :root .sec_ttl {

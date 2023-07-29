@@ -9,7 +9,7 @@ function add_custom_seo_head() {
 
         if (is_404()) {
         echo '<meta name="robots" content="noindex,follow" />' . "\n";
-        echo '<title>ページが見つかりません。| エンゲージメント製品比較サイト ソシキのミカタ</title>' . "\n";
+        echo '<title>ページが見つかりません。</title>' . "\n";
         echo '<meta property="og:image" content="' . meta_image() . '" />' . "\n";
         echo '<meta property="og:type" content="object">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
@@ -44,32 +44,14 @@ add_action('wp_head', 'add_custom_seo_head');
 
 function meta_title() {
     $info_ttl = get_bloginfo('title');
-    $info_subttl = 'エンゲージメント製品比較サイト『ソシキのミカタ』';
+    $info_subttl = '';
     $meta_ttl = get_the_title();
 //ターム名取得
 $term_name = single_term_title( '' , false ); 
         if(is_front_page()){
             return $info_ttl;
-        }elseif(is_post_type_archive('article')){
-            return '記事一覧' .' | '. $info_subttl;
-        }elseif(is_post_type_archive('download')){
-            return 'お役立ち資料一覧' .' | '. $info_subttl;
-        }elseif(is_post_type_archive('service')){
-            return 'カテゴリの一覧' .' | '. $info_subttl;
-        }elseif(is_tax('article-cat')){
-            return $term_name .'の記事一覧 | '. $info_subttl;
-        }elseif(is_tax('download-cat')){
-            return $term_name .'のお役立ち資料一覧 | '. $info_subttl;
-        }elseif(is_tax('categories')){
-            return $term_name .'のサービス一覧 | '. $info_subttl;
         }elseif(is_archive()){
             return '記事一覧' .' | '. $info_subttl;
-        }elseif(is_singular('form')){
-            $form_title = get_field('form_meta_title');
-            return $form_title .' | '. $info_subttl;
-        }elseif(is_singular('thanks')){
-                $thanks_title = get_field('thanks_meta_title');
-            return $thanks_title .' | '. $info_subttl;
         }else{
             return $meta_ttl .' | '. $info_subttl;
         }
@@ -89,12 +71,6 @@ function meta_description() {
             $meta_desc = $desc_info;
         }
         return $meta_desc;
-    }elseif(is_post_type_archive('article')){
-        return 'エンゲージメント製品比較サイト『ソシキのミカタ』の記事一覧ページです。';
-    }elseif(is_post_type_archive('download')){
-        return 'エンゲージメント製品比較サイト『ソシキのミカタ』のお役立ち資料の一覧ページです。';
-    }elseif(is_post_type_archive('service')){
-        return 'エンゲージメント製品比較サイト『ソシキのミカタ』のカテゴリー一覧ページです。';
     }elseif(is_tax()){
     //タームのディスクリプションを取得
     error_reporting(0);
@@ -111,35 +87,7 @@ function meta_description() {
         $meta_desc = '$desc_info';
     }
     return $meta_desc;
-    }elseif(is_singular('service')){
-        $desc_str = get_field('service_desc');
-        $desc_rep = wp_strip_all_tags($desc_str);
-        if($desc_str == !null){
-            if(mb_strlen($desc_rep)>120){
-                $desc_rep = mb_substr($desc_rep,0,119) . '…';
-                $meta_desc = $desc_rep;
-            }else{
-                $meta_desc = $desc_str;
-            }
-        }else{
-            return $desc_info;
-        }
-        return $meta_desc;
-    }elseif(is_singular('download')){
-            $desc_str = get_the_title();
-            $desc_rep = wp_strip_all_tags($desc_str);
-            if($desc_str == !null){
-                if(mb_strlen($desc_rep)>80){
-                    $desc_rep = mb_substr($desc_rep,0,79) . '…';
-                    $meta_desc = $desc_rep .'の資料ダウンロードフォームです。';
-                }else{
-                    $meta_desc = $desc_str .'の資料ダウンロードフォームです。';
-                }
-            }else{
-                return $desc_info;
-            }
-            return $meta_desc;
-        }elseif(is_singular()){
+    }elseif(is_singular()){
             $desc_str = get_the_content();
             $desc_rep = wp_strip_all_tags($desc_str);
             if($desc_str == !null){

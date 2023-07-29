@@ -281,7 +281,8 @@
 }
 @media screen and (max-width: 768px){
     .data_table .row.hed .data_table-item{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        line-height: 1;
     }
 }
 .data_table-item{
@@ -312,7 +313,7 @@
 }
 @media screen and (max-width: 768px){
     .data_table-item.name{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     }
 }
 .data_table-item.mprice{
@@ -321,6 +322,7 @@
 @media screen and (max-width: 768px){
     .data_table-item.mprice{
     font-size: 1.5rem;
+    font-weight: 400;
     }
 }
 .data_table-item.ttl{
@@ -330,6 +332,11 @@
     border-top: #F593A5 1px solid;
     color: #f593a5;
     border-right: #F593A5 1px solid;
+}
+@media screen and (max-width: 768px){
+    .data_table-item.ttl{
+        font-size: 1.6rem;
+    }
 }
 .data_table-item:last-child{
     border-right: #F593A5 1px solid;
@@ -344,6 +351,12 @@
     border-top: #F593A5 1px solid;
     box-sizing: border-box;
 }
+@media screen and (max-width: 768px){
+    .menu_list_ttl{
+        font-size: 1.6rem;
+        padding: 0.8rem 1.6rem;
+    }
+}
 
 .data_table + .data_table-item.ttl{
     border-top: none;
@@ -352,10 +365,10 @@
 .about .catchcopy{
     background: url(../img/about/logo_outline.svg);
     background-repeat: no-repeat;
-    background-size: 64rem;
-    background-position: top -14rem right -11rem;
-    height: 32rem;
-    padding-top: 18rem;
+    background-size: 51rem;
+    background-position: top -11rem right -7rem;
+    height: 44rem;
+    padding-top: 10rem;
 }
 @media screen and (max-width: 768px){
     .about .catchcopy{
@@ -369,11 +382,13 @@
     font-size: 4rem;
     line-height: 1.5;
     margin: auto;
+    letter-spacing: 0.2rem;
 }
 @media screen and (max-width: 768px){
     .about .catchcopy_txt{
         font-size: 2.7rem;
         margin-top: 5rem;
+        font-weight: 300;
     }
 }
 .about .catchcopy_txt span{
@@ -388,7 +403,7 @@
 }
 
 .concept.sec{
-    margin-top: 0;
+    margin-top: -4rem;
 }
 @media screen and (max-width: 768px){
     .concept.sec{
@@ -404,23 +419,28 @@
     font-size: 3.4rem;
 }
 .concept .sec_ttl-ja{
-    font-size: 2.6rem;
+    font-size: 4.6rem;
+    color: #F593A5;
+    position: relative;
+    left: -0.8rem;
 }
 @media screen and (max-width: 768px){
     .concept .sec_ttl-en{
-        font-size: 2.4rem;
+        font-size: 1.6rem;
     }
     .concept .sec_ttl-ja{
-        font-size: 1.8rem;
+        font-size: 2.6rem;
+        left: -0.4rem;
+        margin: 0;
     }
 }
 
 .cencept_list{
-    margin-top: 6.4rem;
+    margin-top: 10rem;
 }
 @media screen and (max-width: 768px){
     .cencept_list{
-        margin-top: 0;
+        margin-top: 2rem;
     }
 }
 .cencept_list-item{
@@ -494,7 +514,7 @@
     font-size: 4rem;
     margin-bottom: 4.8rem;
     padding: 1rem;
-    padding-left: 7.4rem;
+    padding-left: 9.6rem;
     border-bottom: #F593A5 1px solid;
     position: relative;
     left: -2.5rem;
@@ -526,7 +546,7 @@
     position: absolute;
     width: 5rem;
     height: 4.6rem;
-    left: 0;
+    left: 2.5rem;
     top: 2rem;
 }
 @media screen and (max-width: 768px){
@@ -617,6 +637,7 @@
     .cencept_list-item .item_desc-txt{
         padding-left: 0;
         padding-right: 0;
+        font-weight: 400;
     }
 }
 .cencept_list-item:nth-child(even) .item_desc-txt{
