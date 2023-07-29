@@ -1,18 +1,29 @@
 <?php get_header(); ?>
 <main class="main">
+
+<?php if(have_rows('slider_list')):?>
 <div class="fv">
         <div class="slider-area slick">
+        <?php while(have_rows('slider_list')): the_row();?>
+                <?php if(get_sub_field('slider_list_item')):?>
             <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/133255.jpg" alt="">
+                <?php if(get_sub_field('slider_link')):?>
+                    <a href="<?php the_sub_field('slider_link'); ?>">
+                    <?php else:?>
+                    <span>
+                <?php endif;?>
+                <img src="<?php the_sub_field('slider_list_item'); ?>" alt="">
+                        <?php if(get_sub_field('slider_link')):?>
+                         </a>
+                        <?php else:?>
+                         </span>
+                        <?php endif;?>
             </div>
-            <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/131927.jpg" alt="">
-            </div>
-            <div>
-                <img src="<?php echo tmpdir(); ?>/img/top/133253.jpg" alt="">
-            </div>
+            <?php endif;?>
+            <?php endwhile;?>
         </div>
 </div>
+<?php endif;?>
 
 <section class="news sec">
     <div class="container">
@@ -51,21 +62,31 @@
 <section class="insta sec">
     <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
 </section>
+<?php if(have_rows('banner_list')):?>
 <section class="sec banner_area">
     <div class="container">
             <ul class="banner_list">
-                <li class="banner_list-item">
-                    <a href="#"><img src="<?php echo tmpdir(); ?>/img/top/banner-sample.png" alt=""></a>
-                </li>
-                <li class="banner_list-item">
-                    <a href="#"><img src="<?php echo tmpdir(); ?>/img/top/banner-sample.png" alt=""></a>
-                </li>
-                <li class="banner_list-item">
-                    <a href="#"><img src="<?php echo tmpdir(); ?>/img/top/banner-sample.png" alt=""></a>
-                </li>
+            <?php while(have_rows('banner_list')): the_row();?>
+                <?php if(get_sub_field('banner_list_item')):?>
+                    <li class="banner_list-item">
+                        <?php if(get_sub_field('banner_link')):?>
+                            <a href="<?php the_sub_field('banner_link'); ?>">
+                            <?php else:?>
+                            <span>
+                        <?php endif;?>
+                            <img src="<?php the_sub_field('banner_list_item'); ?>" alt="">
+                        <?php if(get_sub_field('banner_link')):?>
+                         </a>
+                        <?php else:?>
+                         </span>
+                        <?php endif;?>
+                    </li>
+                <?php endif;?>
+            <?php endwhile;?>
             </ul>
     </div>
 </section>
+<?php endif;?>
 <section id="doctors" class="sec doctors_area">
     <div class="container">
         <h2 class="sec_ttl">医師紹介</h2>
