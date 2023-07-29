@@ -306,11 +306,6 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     }
 }
 @media screen and (max-width: 768px){
-    .top .header.active .hamburger span {
-    background-color: #333;
-}
-}
-@media screen and (max-width: 768px){
     .header.active .header_nav-logo{
         display: block;
         z-index: 50;
@@ -349,17 +344,17 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
 }
 @media screen and (max-width: 768px){
     .menu_area-menu .menu-item::after {
-    content: '';
-    background-image: url(../img/common/arrow-forward.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 0.8rem;
-    padding: 1rem;
-    right: 0;
-    left: auto;
-    position: absolute;
-    top: 51%;
-    transform: translateY(-50%);
+        content: '';
+        background-image: url(../img/common/arrow-forward.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 1.6rem;
+        padding: 1rem 0.4rem;
+        right: 0;
+        left: auto;
+        position: absolute;
+        top: 51%;
+        transform: translateY(-50%);
 }
 }
 .menu_area-menu .menu-item a{
@@ -408,9 +403,6 @@ _::-webkit-full-page-media, _:future, :root .copy_area-para {
     display: inline-block;
     transition: all 0.4s;
     box-sizing: border-box;
-}
-.top .hamburger span {
-    background-color: #fff;
 }
 .top .header.float .hamburger span {
     background-color: #333;

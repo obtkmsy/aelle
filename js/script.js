@@ -29,7 +29,7 @@ $(function(){
     if (winW >= devW) {
         var height_x = 150;
     }else{
-        var height_x = 70;
+        var height_x = 93;
     }
 
     if(urlHash) {
