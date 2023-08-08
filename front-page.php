@@ -60,7 +60,7 @@
     </div>
 </section>
 <section class="insta sec">
-    <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
+    <?php echo do_shortcode('[instagram-feed feed=4]'); ?>
 </section>
 <?php if(have_rows('banner_list')):?>
 <section class="sec banner_area">
@@ -114,7 +114,7 @@
                             <dt class="position">理事長</dt>
                             <dd class="name">
                                 <span>和倉 隆造</span>
-                                <a href="#" class="hashtag">#小顔先生</a>
+                                <a href="https://www.instagram.com/dr.wakura/?hl=ja" class="hashtag" target="_blank" rel="noopener noreferrer">#小顔先生</a>
                             </dd>
                         </dl>
                         <span class="en">RYUZO WAKURA</span>
